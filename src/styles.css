@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 0.5f 3f 3f 0.5f;
+  grid-template-rows: 10% 40% 15% 15% 10% 10%;
+  background: #FF6A5C;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-items: center;
+}
+
+.ic_launcher {
+  width: 227px;
+  height: 307px;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  justify-self: center;
+}
+
+.rectangle {
+  width: 471px;
+  height: 89px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  font-size: 26px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.ellipse {
+  width: 75px;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url('assets/img/check.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+#user {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+#password {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+#btn-log-in {
+  grid-column: 2/3;
+  grid-row: 5/7;
+}
