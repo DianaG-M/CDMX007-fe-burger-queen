@@ -9,18 +9,22 @@
   letter-spacing: normal;
 }
 
-#home {
+.grid {
   display: grid;
-  grid-template-columns: 0.5f 3f 3f 0.5f;
-  grid-template-rows: 10% 40% 15% 15% 10% 10%;
-  background: #FF6A5C;
   height: 100vh;
   width: 100vw;
   align-items: center;
   justify-items: center;
 }
 
-.ic_launcher {
+/* Incia Home */
+#home {
+  background: #FF6A5C;
+  grid-template-columns: 0.5f 3f 3f 0.5f;
+  grid-template-rows: 10% 40% 15% 15% 10% 10%;
+}
+
+.logo {
   width: 227px;
   height: 307px;
   grid-column: 1/4;
@@ -65,3 +69,39 @@
   grid-column: 2/3;
   grid-row: 5/7;
 }
+
+
+/* Inicia Menu */
+#menu {
+  background: #242E3A;
+  background-size: cover;
+  grid-template-columns: 3f 3f;
+  grid-template-rows: 25% 35% 15% 25%;
+}
+
+#img-desayuno {
+  grid-column: 1;
+  grid-row: 2/3;
+}
+
+#img-comida {
+  grid-column: 2;
+  grid-row: 2/3;
+}
+
+.title-menu{
+  font-size: 40px;
+  font-weight: bold;
+  color: #fffdfd;
+}
+
+#h3-desayuno {
+  grid-column: 1;
+  grid-row: 3/4;
+}
+
+#h3-comida { 
+  grid-column: 2;
+  grid-row: 3/4
+} 
+
