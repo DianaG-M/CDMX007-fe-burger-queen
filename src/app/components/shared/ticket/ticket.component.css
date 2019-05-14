@@ -14,7 +14,7 @@
 #main-ticket {
     display: grid;
     grid-template-columns: 60% auto;
-    height: 100vh;
+    height: 65vh;
 }
 
 #ticket {
