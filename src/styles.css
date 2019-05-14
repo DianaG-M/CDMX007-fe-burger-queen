@@ -1,67 +1,108 @@
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font-family: Verdana;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
 }
+
+.grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* Incia Home */
 
 #home {
-  display: grid;
-  grid-template-columns: 0.5f 3f 3f 0.5f;
-  grid-template-rows: 10% 40% 15% 15% 10% 10%;
-  background: #FF6A5C;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-items: center;
+    background: #FF6A5C;
+    grid-template-columns: 0.5f 3f 3f 0.5f;
+    grid-template-rows: 10% 40% 15% 15% 10% 10%;
 }
 
-.ic_launcher {
-  width: 227px;
-  height: 307px;
-  grid-column: 1/4;
-  grid-row: 2/3;
-  justify-self: center;
+.logo {
+    width: 227px;
+    height: 307px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-self: center;
 }
 
 .rectangle {
-  width: 471px;
-  height: 89px;
-  border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-
-  font-size: 26px;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.8);
-  text-align: center;
+    width: 471px;
+    height: 89px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 26px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
 .ellipse {
-  width: 75px;
-  height: 75px;
-  background-color: rgba(255, 255, 255, 0.9);
-  background-image: url('assets/img/check.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  justify-self: center;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('assets/img/check.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    justify-self: center;
 }
 
 #user {
-  grid-column: 2/3;
-  grid-row: 3/4;
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
 #password {
-  grid-column: 2/3;
-  grid-row: 4/5;
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
 
 #btn-log-in {
-  grid-column: 2/3;
-  grid-row: 5/7;
+    grid-column: 2/3;
+    grid-row: 5/7;
+}
+
+
+/* Inicia Menu */
+
+#menu {
+    background: #242E3A;
+    background-size: cover;
+    grid-template-columns: 3f 3f;
+    grid-template-rows: 25% 35% 15% 25%;
+}
+
+#img-comida {
+    grid-column: 2;
+    grid-row: 2/3;
+}
+
+.title-menu {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fffdfd;
+}
+
+#h3-desayuno {
+    grid-column: 1;
+    grid-row: 3/4;
+}
+
+#h3-comida {
+    grid-column: 2;
+    grid-row: 3/4
+}
+
+#img-desayuno {
+    grid-column: 1;
+    grid-row: 2/3;
 }
