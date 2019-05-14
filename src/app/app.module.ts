@@ -13,7 +13,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { OrdenComponent } from './components/orden/orden.component';
-import { ComidaComponent } from './components/comida/comida.component';
+import { TicketComponent } from './components/shared/ticket/ticket.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ComidaComponent } from './components/comida/comida.component';
     MenuComponent,
     NavComponent,
     OrdenComponent,
-    ComidaComponent
+    TicketComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
