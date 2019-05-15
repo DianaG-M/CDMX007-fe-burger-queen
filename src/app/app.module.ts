@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 
 //Service
+import { BreakfastService } from './services/breakfast.service';
 
 
 //Components
@@ -36,7 +37,9 @@ import { BreakfastComponent } from './components/breakfast/breakfast.component';
     APP_ROUTING,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BreakfastService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
