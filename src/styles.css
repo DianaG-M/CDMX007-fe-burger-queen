@@ -106,3 +106,88 @@
     grid-column: 1;
     grid-row: 2/3;
 }
+
+
+/* Clases de break y food */
+.button {
+    width: 108px;
+    height: 60.3px;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000
+}
+
+.principal {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 60% auto;
+    bottom: 0.6%;
+    width: 100%;
+    height: 24vh;
+}
+
+.main-button {
+    background-color: #38404a;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: 15% 40% auto;
+    margin-right: 5px;
+}
+
+.saucers {
+    background-color: #ff6a5c;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+.drink {
+    background-color: #20948b;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+.ok{
+    background-image: linear-gradient(to top, #a4d4b4 100%, rgba(0, 245, 81, 0));
+    grid-column: 4;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+.extra {
+    background-color: #eedd4c;
+    grid-column: 1;
+    grid-row: 3;
+    margin: auto;
+}
+
+/* Inicia desayuno */
+#ingredients-break {
+    background-color: #c0da7a;
+    grid-column: 3;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+/* Inicia comida */
+#garniture {
+    background-color: #c08dba;
+    grid-column: 3;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+#ingredients-food {
+    background-color: #c0da7a;
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+}
