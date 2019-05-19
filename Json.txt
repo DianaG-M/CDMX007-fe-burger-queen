@@ -1,0 +1,146 @@
+{
+  "breakfast": [
+    {
+      "platillo": [
+        {
+          "nombre": "sandwich",
+          "img": "assets/img/sandwich.png",
+          "precio": "$35"
+        }
+      ],
+      "bebida": [
+        {
+          "nombre": "jugp",
+          "img": "assets/img/jugo.png",
+          "precio": "$15"
+        },
+        {
+          "nombre": "cafe con leche",
+          "img": "assets/img/cafe_leche.png",
+          "precio": "$28"
+        },
+        {
+          "nombre": "cafe americano",
+          "img": "assets/img/cafe_americano",
+          "precio": "$20"
+        }
+      ],
+      "ingredientes": [
+        {
+          "nombre": "queso",
+          "img": "assets/img/queso.png"
+        },
+        {
+          "nombre": "lechuga",
+          "img": "assets/img/lechuga.png"
+        },
+        {
+          "nombre": "cebolla",
+          "img": "assets/img/cebolla.png"
+        },
+        {
+          "nombre": "jitomate",
+          "img": "assets/img/jitomate.png"
+        }
+      ]
+    }
+  ],
+  "food": [
+    {
+      "platillo": [
+        {
+          "hamburguesa": {
+            "sencilla": [
+              {
+                "nombre": "sencilla res",
+                "img": "assets/img/hamburguesa.png",
+                "precio": "$40"
+              },
+              {
+                "nombre": "sencilla pollo",
+                "img": "assets/img/hamburguesa.png",
+                "precio": "$40"
+              },
+              {
+                "nombre": "sencilla vegetariana",
+                "img": "assets/img/hamburguesa.png",
+                "precio": "$40"
+              }
+            ],
+            "doble": [
+              {
+                "nombre": "doble res",
+                "img": "assets/img/hamburguesa.png",
+                "precio": "$55"
+              },
+              {
+                "nombre": "doble pollo",
+                "img": "assets/img/hamburguesa.png",
+                "precio": "$55"
+              },
+              {
+                "nombre": "doble vegetariana",
+                "img": "assets/img/hamburguesa.png",
+                "precio": "$55"
+              }
+            ]
+          }
+        }
+      ],
+      "bebida": [
+        {
+          "nombre": "agua",
+          "img": "assets/img/agua.png",
+          "precio": "10$"
+        },
+        {
+          "nombre": "refresco",
+          "img ": "assets/img/refresco.png",
+          "precio": "$15"
+        }
+      ],
+      "guarnicion": [
+        {
+          "nombre": "papas fritas",
+          "img ": "assets/img/papa.png",
+          "precio": "$15"
+        },
+        {
+          "nombre": "aros de cebolla",
+          "img": "assets/img/aros.png",
+          "precio": "$15"
+        }
+      ],
+      "extra": [
+        {
+          "nomre": "huevo",
+          "img": "assets/img/huevo.png",
+          "precio": "$15"
+        },
+        {
+          "nombre": "queso",
+          "img": "assets/img/queso_extra.png",
+          "precio": "$15"
+        }
+      ],
+      "ingredientes": [
+        {
+          "nombre": "lechuga",
+          "img": "assets/img/lechuga.png"
+        },
+        {
+          "nombre": "cebolla",
+          "img": "assets/img/cebolla.png"
+        },
+        {
+          "nombre": "jitomate",
+          "img": "assets/img/jitomate.png"
+        },
+        {
+          "nombre": "pepinillos",
+          "img": "assets/img/pepinillos.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-<main class="principal">
+<main *ngIf="mostrar" class="principal">
     <main class="main-button">
-        <button class="button saucers">Platillos</button>
+        <button (click)="viewSaucers()" class="button saucers">Platillos</button>
         <button class="button drink">Bebidas</button>
         <button id="ingredients-break" class="button">Sin ingredientes</button>
         <button class="button ok">OK</button>

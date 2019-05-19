@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodComponent implements OnInit {
 
+  mostrar = false;
+
   constructor() { }
 
   ngOnInit() {
