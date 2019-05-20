@@ -18,6 +18,9 @@ import { TicketComponent } from './components/shared/ticket/ticket.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { OrderComponent } from './components/order/order.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
+import { FoodComponent } from './components/food/food.component';
+import { ProductsComponent } from './components/shared/products/products.component';
+import { SaucersComponent } from './components/shared/products/saucers.component';
 
 
 
@@ -30,7 +33,11 @@ import { BreakfastComponent } from './components/breakfast/breakfast.component';
     OrderComponent,
     TicketComponent,
     FooterComponent,
-    BreakfastComponent
+    BreakfastComponent,
+    FoodComponent,
+    ProductsComponent,
+    SaucersComponent,
+    
   ],
   imports: [
     BrowserModule,

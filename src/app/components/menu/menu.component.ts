@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakfastService } from 'src/app/services/breakfast.service';
+
 
 @Component({
   selector: 'app-menu',
@@ -6,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mostrar: BreakfastService) {
+  }
 
   ngOnInit() {
+  }
+
+  public viewBreak() {
+    this.mostrar.view();
+  }
+
+  public viewFood() {
+    this.mostrar.view();
   }
 
 }
