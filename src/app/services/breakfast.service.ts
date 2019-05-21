@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class BreakfastService {
 
-    private breakfast: Desayuno[] = [
+    private breakfast: any[] = [
         {
             platillo: [
                 {
@@ -73,9 +73,9 @@ export class BreakfastService {
     }
 }
 
-export interface Desayuno { [
-    id: string,
-    nombre: string,
-    img: string,
-    precio: string
-]; }
+// export interface Desayuno { [
+//     id: string,
+//     nombre: string,
+//     img: string,
+//     precio: string
+// ]; }
