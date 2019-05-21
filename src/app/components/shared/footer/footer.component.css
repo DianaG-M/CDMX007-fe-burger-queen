@@ -59,3 +59,14 @@ footer {
     grid-row: 1;
     text-align: left;
 }
+
+#break-food {
+    height: 24vh;
+    background: #38404a;
+    grid-column: 1;
+    grid-row: 1/2;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: 15% 40% auto;
+}

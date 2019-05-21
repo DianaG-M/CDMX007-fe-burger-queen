@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakfastService } from '.././../services/breakfast.service';
+import { BreakfastService, Desayuno } from '.././../services/breakfast.service';
 // import { Router } from '@angular/router';
 
 @Component({
@@ -7,10 +7,13 @@ import { BreakfastService } from '.././../services/breakfast.service';
   templateUrl: './breakfast.component.html'
 })
 export class BreakfastComponent implements OnInit {
-  constructor(public mostrar: BreakfastService) {
+  botones: Desayuno[] = [];
+  constructor(private mostrarBotones: BreakfastService) {
   }
 
   ngOnInit() {
+    this.botones = this.mostrarBotones.getBreakfast();
+    console.log(this.botones);
   }
 
 }

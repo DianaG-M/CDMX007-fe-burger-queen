@@ -72,42 +72,6 @@
 }
 
 
-/* Inicia Menu */
-
-#menu {
-    background: #242E3A;
-    background-size: cover;
-    grid-template-columns: 3f 3f;
-    grid-template-rows: 25% 35% 15% 25%;
-}
-
-#img-comida {
-    grid-column: 2;
-    grid-row: 2/3;
-}
-
-.title-menu {
-    font-size: 40px;
-    font-weight: bold;
-    color: #fffdfd;
-}
-
-#h3-desayuno {
-    grid-column: 1;
-    grid-row: 3/4;
-}
-
-#h3-comida {
-    grid-column: 2;
-    grid-row: 3/4
-}
-
-#img-desayuno {
-    grid-column: 1;
-    grid-row: 2/3;
-}
-
-
 /* Clases de break y food */
 
 .button {

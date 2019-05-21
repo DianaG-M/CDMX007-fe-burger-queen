@@ -11,4 +11,7 @@
     background-color: #242e3a;
     grid-column: 1/2;
     margin-right: 5px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: 33.3% 33.3% auto;
 }

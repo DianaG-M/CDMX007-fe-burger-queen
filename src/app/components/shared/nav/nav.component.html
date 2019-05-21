@@ -1,11 +1,12 @@
 <header>
     <nav id="nav-logo" class="nav">
         <img id="logo-nav" src="../../../../assets/img/logo-nav.png" alt="">
-        <h3 id="desayuno">Desayuno</h3>
+        <button [routerLink]="['desayuno']" type="button" id="desayuno" class="btn btn-outline-dark">Desayuno</button>
+        <button [routerLink]="['comida']" type="button" id="comida" class="btn btn-outline-info">Comida</button>
     </nav>
 
     <nav id="nav-icon">
-        <a [routerLink]="['/menu']" id="menu"><img class="icons" src="../../../../assets/img/menu.png" alt=""></a>
+        <a [routerLink]="['/orden']" id="menu"><img class="icons" src="../../../../assets/img/menu.png" alt=""></a>
         <img id="configuration" class="icons" src="../../../../assets/img/configuración.png" alt="">
         <a [routerLink]="['/home']" id="exit"><img class="icons" src="../../../../assets/img/salir.png" alt=""></a>
     </nav>

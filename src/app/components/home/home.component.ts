@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor(private router: Router) {
-    console.log('constructor')
+    console.log('constructor');
    }
 
   ngOnInit() {
   }
 
   goMenu() {
-    this.router.navigate( ['/menu'])
+    this.router.navigate( ['/orden'] );
   }
 }

@@ -8,13 +8,9 @@ import { BreakfastService } from 'src/app/services/breakfast.service';
 })
 export class FoodComponent implements OnInit {
 
-  constructor(public mostrar: BreakfastService) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  public goComand() {
-    this.mostrar.view();
   }
 
 }
