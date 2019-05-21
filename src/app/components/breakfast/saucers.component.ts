@@ -3,7 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-saucers',
   template: `
-    <h1>Aquí van los platillos</h1>
+    <main id="main-saucers-break">
+      <main id="products">
+
+      </main>
+    </main>
   `
 })
 
