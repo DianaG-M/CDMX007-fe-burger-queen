@@ -11,7 +11,10 @@ const APP_ROUTES: Routes = [
     children: [
         { path: 'desayuno', component: BreakfastComponent,
         children: [
-            {path: 'platillos', component: SaucersComponent }
+            { path: 'platillos', component: SaucersComponent },
+            { path: 'bebidas', component: SaucersComponent },
+            { path: 'ingredientes', component: SaucersComponent },
+            { path: 'extra', component: SaucersComponent }
         ]},
         { path: 'comida', component: FoodComponent }
     ]},

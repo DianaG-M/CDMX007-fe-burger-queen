@@ -1,9 +1,9 @@
 <main class="principal">
     <main class="main-button">
         <button [routerLink]="[ 'platillos' ]" class="button saucers">Platillos</button>
-        <button class="button drink">Bebidas</button>
-        <button id="ingredients-break" class="button">Sin ingredientes</button>
+        <button [routerLink]="[ 'bebidas' ]" class="button drink">Bebidas</button>
+        <button [routerLink]="[ 'ingredientes' ]" id="ingredients-break" class="button">Sin ingredientes</button>
         <button class="button ok">OK</button>
-        <button class="button extra">Extra</button>
+        <button [routerLink]="[ 'extra' ]" class="button extra">Extra</button>
     </main>
 </main>
