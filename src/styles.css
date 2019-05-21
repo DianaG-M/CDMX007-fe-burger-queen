@@ -1,0 +1,198 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* Incia Home */
+
+#home {
+    background: #FF6A5C;
+    grid-template-columns: 0.5f 3f 3f 0.5f;
+    grid-template-rows: 10% 40% 15% 15% 10% 10%;
+}
+
+.logo {
+    width: 227px;
+    height: 307px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.rectangle {
+    width: 471px;
+    height: 89px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 26px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.ellipse {
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('assets/img/check.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+#user {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#password {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#btn-log-in {
+    grid-column: 2/3;
+    grid-row: 5/7;
+}
+
+
+/* Inicia Menu */
+
+#menu {
+    background: #242E3A;
+    background-size: cover;
+    grid-template-columns: 3f 3f;
+    grid-template-rows: 25% 35% 15% 25%;
+}
+
+#img-comida {
+    grid-column: 2;
+    grid-row: 2/3;
+}
+
+.title-menu {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fffdfd;
+}
+
+#h3-desayuno {
+    grid-column: 1;
+    grid-row: 3/4;
+}
+
+#h3-comida {
+    grid-column: 2;
+    grid-row: 3/4
+}
+
+#img-desayuno {
+    grid-column: 1;
+    grid-row: 2/3;
+}
+
+
+/* Clases de break y food */
+
+.button {
+    width: 108px;
+    height: 60.3px;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000
+}
+
+.principal {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 60% auto;
+    bottom: 0.6%;
+    width: 100%;
+    height: 24vh;
+}
+
+.main-button {
+    background-color: #38404a;
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: 15% 40% auto;
+    margin-right: 5px;
+}
+
+.saucers {
+    background-color: #ff6a5c;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+.drink {
+    background-color: #20948b;
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+.ok {
+    background-image: linear-gradient(to top, #a4d4b4 100%, rgba(0, 245, 81, 0));
+    grid-column: 4;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+.extra {
+    background-color: #eedd4c;
+    grid-column: 1;
+    grid-row: 3;
+    margin: auto;
+}
+
+
+/* Inicia desayuno */
+
+#ingredients-break {
+    background-color: #c0da7a;
+    grid-column: 3;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+
+/* Inicia comida */
+
+#garniture {
+    background-color: #c08dba;
+    grid-column: 3;
+    grid-row: 2;
+    margin: 0px auto;
+}
+
+#ingredients-food {
+    background-color: #c0da7a;
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+}
