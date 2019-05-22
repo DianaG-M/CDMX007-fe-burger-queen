@@ -22,7 +22,7 @@
 
 #home {
     background: #FF6A5C;
-    grid-template-columns: 0.5f 3f 3f 0.5f;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: 10% 40% 15% 15% 10% 10%;
 }
 
@@ -71,6 +71,20 @@
     grid-row: 5/7;
 }
 
+#lb-user {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: left;
+    margin-left: 55px;
+}
+
+#lb-password {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: left;
+    margin-left: 55px;
+}
+
 
 /* Clases de break y food */
 
@@ -88,95 +102,120 @@
     color: #000000
 }
 
-.principal {
-    position: absolute;
+
+/* Estilos del footer */
+
+footer {
     display: grid;
     grid-template-columns: 60% auto;
-    bottom: 0.6%;
-    width: 100%;
-    height: 24vh;
+    grid-row: 10% auto;
 }
 
-.main-button {
+#nav-footer {
     background-color: #38404a;
-    grid-column: 1;
+    height: 24vh;
+    width: 100%;
+    grid-column: 2;
     display: grid;
+    grid-template-columns: 15% 30% auto 30% 15%;
+    grid-template-rows: 15% 40% auto;
+}
+
+.font {
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.btn-footer {
+    font-size: 18px;
+    width: 108px;
+    height: 60.3px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #a4d4b4 100%, rgba(0, 245, 81, 0));
+}
+
+#confirm {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#cancel {
+    grid-column: 4/5;
+    grid-row: 2;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+
+#p-total {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#p-cost {
+    grid-column: 4;
+    grid-row: 1;
+    text-align: left;
+}
+
+#break-food {
+    height: 24vh;
+    background: #38404a;
+    grid-column: 1;
+    grid-row: 1/2;
+    margin-right: 5px;
+}
+
+
+/* botones de breakfast */
+
+#container {
+    display: grid;
+    height: 24vh;
     grid-template-columns: 25% 25% 25% auto;
     grid-template-rows: 15% 40% auto;
-    margin-right: 5px;
 }
 
-.saucers {
-    background-color: #ff6a5c;
+#saucers {
     grid-column: 1;
-    grid-row: 2;
-    margin: 0px auto;
+    grid-row: 2/3;
+    background-color: #FF6A5C;
+    margin: auto;
 }
 
-.drink {
-    background-color: #20948b;
+#drinks {
     grid-column: 2;
-    grid-row: 2;
-    margin: 0px auto;
+    grid-row: 2/3;
+    background-color: #20948B;
+    margin: auto;
 }
 
-.ok {
-    background-image: linear-gradient(to top, #a4d4b4 100%, rgba(0, 245, 81, 0));
+#ingredients {
+    grid-column: 3;
+    grid-row: 2/3;
+    background-color: #C0DA7A;
+    margin: auto;
+}
+
+#ok {
     grid-column: 4;
-    grid-row: 2;
-    margin: 0px auto;
-}
-
-.extra {
-    background-color: #eedd4c;
-    grid-column: 1;
-    grid-row: 3;
+    grid-row: 2/3;
+    background-color: #A4D4B4;
     margin: auto;
 }
 
-
-/* Inicia desayuno */
-
-#ingredients-break {
-    background-color: #c0da7a;
-    grid-column: 3;
-    grid-row: 2;
-    margin: 0px auto;
-}
-
-
-/* Inicia comida */
-
-#garniture {
-    background-color: #c08dba;
-    grid-column: 3;
-    grid-row: 2;
-    margin: 0px auto;
-}
-
-#ingredients-food {
-    background-color: #c0da7a;
-    grid-column: 2;
-    grid-row: 3;
-    margin: auto;
-}
-
-
-/* Inicia platillos de breakfast */
-
-#main-saucers-break {
-    background: red;
+#extra {
     grid-column: 1;
-    display: grid;
-    width: 100%;
-    height: 65vh;
-}
-
-#products {
-    background-color: red;
-    grid-column: 1/2;
-    margin-right: 5px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% auto;
-    grid-template-rows: 33.3% 33.3% auto;
+    grid-row: 3/4;
+    background-color: #EDDD4C;
+    margin: auto;
 }

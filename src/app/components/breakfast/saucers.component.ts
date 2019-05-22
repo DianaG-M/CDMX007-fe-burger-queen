@@ -5,7 +5,6 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <main id="main-saucers-break">
       <main id="products">
-
       </main>
     </main>
   `

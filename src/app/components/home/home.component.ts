@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  goMenu() {
+  goOrder() {
     this.router.navigate( ['/orden'] );
   }
 }
