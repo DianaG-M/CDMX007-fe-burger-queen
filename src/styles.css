@@ -18,18 +18,18 @@
 }
 
 
-/* Incia Home */
+/* Home */
 
 #home {
     background: #FF6A5C;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 25% 12% 38% 25%;
     grid-template-rows: 10% 40% 15% 15% 10% 10%;
 }
 
 .logo {
     width: 227px;
     height: 307px;
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 2/3;
     justify-self: center;
 }
@@ -57,49 +57,30 @@
 }
 
 #user {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 3/4;
 }
 
 #password {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 4/5;
 }
 
 #btn-log-in {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 5/7;
 }
 
 #lb-user {
     grid-column: 2/3;
     grid-row: 3/4;
-    justify-self: left;
-    margin-left: 55px;
+    justify-self: center;
 }
 
 #lb-password {
     grid-column: 2/3;
     grid-row: 4/5;
-    justify-self: left;
-    margin-left: 55px;
-}
-
-
-/* Clases de break y food */
-
-.button {
-    width: 108px;
-    height: 60.3px;
-    border-radius: 10px;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000000
+    justify-self: center;
 }
 
 
@@ -109,6 +90,7 @@ footer {
     display: grid;
     grid-template-columns: 60% auto;
     grid-row: 10% auto;
+    height: 24vh;
 }
 
 #nav-footer {
@@ -121,7 +103,7 @@ footer {
     grid-template-rows: 15% 40% auto;
 }
 
-.font {
+.font-roboto {
     font-family: Roboto;
     font-weight: bold;
     font-style: normal;
@@ -176,46 +158,157 @@ footer {
 }
 
 
-/* botones de breakfast */
+/* Clases de botones del componente breakfast y food */
 
-#container {
+.button {
+    width: 108px;
+    height: 60.3px;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000
+}
+
+.container {
     display: grid;
     height: 24vh;
     grid-template-columns: 25% 25% 25% auto;
     grid-template-rows: 15% 40% auto;
 }
 
-#saucers {
+.saucers {
     grid-column: 1;
     grid-row: 2/3;
     background-color: #FF6A5C;
     margin: auto;
 }
 
-#drinks {
+.drinks {
     grid-column: 2;
     grid-row: 2/3;
     background-color: #20948B;
     margin: auto;
 }
 
-#ingredients {
-    grid-column: 3;
-    grid-row: 2/3;
+.ingredientsB,
+.ingredientsF {
     background-color: #C0DA7A;
     margin: auto;
 }
 
-#ok {
+.ok {
     grid-column: 4;
     grid-row: 2/3;
     background-color: #A4D4B4;
     margin: auto;
 }
 
+.extra {
+    background-color: #EDDD4C;
+    margin: auto;
+}
+
+.garniture {
+    background-color: #C08DBA;
+    margin: auto;
+}
+
+
+/* Botones exclusivos del componente breakfast */
+
+#ingredientsB {
+    grid-column: 3;
+    grid-row: 2/3;
+}
+
 #extra {
     grid-column: 1;
     grid-row: 3/4;
-    background-color: #EDDD4C;
+}
+
+
+/* Botones exclusivos del componente food*/
+
+#ingredientsF {
+    grid-column: 2;
+    grid-row: 3/4;
+}
+
+#garniture {
+    grid-column: 3;
+    grid-row: 2/3;
+}
+
+
+/* Ticket */
+
+.font-verdana {
+    font-family: Verdana;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.aling-left {
+    text-align: initial;
+}
+
+#main-ticket {
+    display: grid;
+    grid-template-columns: 60% auto;
+    width: 100%;
+    height: 65vh;
+}
+
+#ticket {
+    background-color: #38404a;
+    text-align: center;
+    font-size: 25px;
+    grid-column: 2;
+}
+
+#elements {
+    display: grid;
+    grid-template-columns: 15% 45% auto;
+}
+
+#quantity {
+    grid-column: 1;
     margin: auto;
+}
+
+#item {
+    grid-column: 2;
+}
+
+#cost {
+    grid-column: 3;
+}
+
+#main-products {
+    background-color: #242e3a;
+    grid-column: 1;
+    margin-right: 5px;
+}
+
+
+/* platillos */
+
+.platillos {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% auto;
+    width: 100%;
+}
+
+#saucer-breakfast {
+    grid-column: 1/2;
+    color: white;
+    font-size: 50px;
 }

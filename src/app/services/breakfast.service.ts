@@ -4,32 +4,27 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class BreakfastService {
 
-    private breakfast: any[] = [
+    private breakfast: Breakfast[] = [
         {
-            num: 1,
-            id: 'saucers',
+            type: 'saucers',
             nombre: 'Platillos'
         }, {
-            num: 2,
-            id: 'drinks',
+            type: 'drinks',
             nombre: 'Bebidas'
         }, {
-            num: 3,
-            id: 'ingredients',
+            type: 'ingredientsB',
             nombre: 'Sin ingredientes'
         }, {
-            num: 4,
-            id: 'ok',
+            type: 'ok',
             nombre: 'OK'
         }, {
-            num: 5,
-            id: 'extra',
+            type: 'extra',
             nombre: 'Extra'
         }
     ];
 
     constructor() {
-        console.log('Servicio listo para usarse');
+        console.log('Servicio de desayuno listo para usarse');
     }
 
     getBreakfast() {
@@ -37,8 +32,7 @@ export class BreakfastService {
     }
 }
 
-export interface Desayuno {
-    num: number;
-    id: string;
+export interface Breakfast {
+    type: string;
     nombre: string;
 }
