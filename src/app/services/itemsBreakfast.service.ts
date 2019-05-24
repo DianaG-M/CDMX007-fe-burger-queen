@@ -2,59 +2,50 @@ import { Injectable } from '@angular/core';
 
 
 @Injectable()
-export class BreakfastService {
+export class ItemsBreakfastService {
 
-    private breakfast: Breakfast[] = [
+    private itemsBreak: any[] = [
         {
-            id: 'sandwich',
             type: 'saucer',
             nombre: 'Sandwich',
             img: 'assets/img/sandwich.png',
             precio: 35
         }, {
-            id: 'juice',
             type: 'drink',
-            nombre: 'jugo',
+            nombre: 'jugp',
             img: 'assets/img/jugo.png',
             precio: 15
         }, {
-            id: 'american',
             type: 'drink',
             nombre: 'Cafe americano',
             img: 'assets/img/americano.png',
             precio: 20
         }, {
-            id: 'coffe',
             type: 'drink',
             nombre: 'Café con leche',
             img: 'assets/img/leche.png',
             precio: 28
         }, {
-            id: 'cheese',
-            type: 'ingredient-b',
+            type: 'ingredient',
             nombre: 'Queso',
             img: 'assets/img/queso.png',
             precio: 0
         }, {
-            id: 'lettuce',
-            type: 'ingredient-b',
+            type: 'ingredient',
             nombre: 'Lechuga',
             img: 'assets/img/lechuga.png',
             precio: 0
         }, {
-            id: 'onion',
-            type: 'ingredient-b',
+            type: 'ingredient',
             nombre: 'Cebolla',
             img: 'assets/img/cebolla.png',
             precio: 0
         }, {
-            id: 'tomato',
-            type: 'ingredient-b',
+            type: 'ingredient',
             nombre: 'Jitomate',
             img: 'assets/img/jitomate.png',
             precio: 0
         }, {
-            id: 'extra-cheese',
             type: 'extras',
             nombre: 'Queso',
             img: 'assets/img/queso.png',
@@ -63,18 +54,11 @@ export class BreakfastService {
     ];
 
     constructor() {
-        console.log('Servicio de desayuno listo para usarse');
+        console.log('Productos listos para usarse');
     }
 
-    getBreakfast() {
-        return this.breakfast;
+    getItemBreak() {
+        return this.itemsBreak;
     }
 }
 
-export interface Breakfast {
-    id: string;
-    type: string;
-    nombre: string;
-    img: string;
-    precio: number;
-}

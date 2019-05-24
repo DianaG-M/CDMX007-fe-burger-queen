@@ -1,10 +1,9 @@
-<main *ngIf="mostrar.mostrar" class="principal">
-    <main class="main-button">
-        <button class="button saucers">Platillos</button>
-        <button class="button drink">Bebidas</button>
-        <button id="garniture" class="button">Guarnición</button>
-        <button class="button ok">OK</button>
-        <button class="button extra">Extra</button>
-        <button id="ingredients-food" class="button">Sin ingredientes</button>
-    </main>
+<main class="containerF">
+    <p id="p-saucer-food" class="title-order font-verdana">Hamburguesa</p>
+    <p id="p-drink-food" class="title-order font-verdana">Bebidas</p>
+    <p id="p-ingredients-food" class="title-order font-verdana">Ingredientes</p>
+    <p id="p-garrison" class="title-order font-verdana">Guarnición</p>
+    <p id="p-extra" class="title-order font-verdana">Extra</p>
+    <button type="button" *ngFor="let btnFood of buttonsFood" [id]="btnFood.id" class="{{btnFood.type}} button"> <img [src]="btnFood.img" alt="" class="img-button"> <br> {{ btnFood.nombre }}</button>
+    <button type="button" id="ok-food" class="button ok">OK</button>
 </main>

@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakfastService } from '.././../services/breakfast.service';
-// import { Router } from '@angular/router';
+import { BreakfastService, Breakfast } from '.././../services/breakfast.service';
 
 @Component({
   selector: 'app-breakfast',
   templateUrl: './breakfast.component.html'
 })
 export class BreakfastComponent implements OnInit {
-  constructor(public mostrar: BreakfastService) {
+  buttonsBreak: Breakfast[] = [];
+  constructor(private showButtonsBreak: BreakfastService) {
   }
 
   ngOnInit() {
+    this.buttonsBreak = this.showButtonsBreak.getBreakfast();
+    console.log(this.buttonsBreak);
   }
 
 }

@@ -18,18 +18,18 @@
 }
 
 
-/* Incia Home */
+/* Home */
 
 #home {
     background: #FF6A5C;
-    grid-template-columns: 0.5f 3f 3f 0.5f;
+    grid-template-columns: 25% 12% 38% 25%;
     grid-template-rows: 10% 40% 15% 15% 10% 10%;
 }
 
 .logo {
     width: 227px;
     height: 307px;
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 2/3;
     justify-self: center;
 }
@@ -57,62 +57,104 @@
 }
 
 #user {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 3/4;
 }
 
 #password {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 4/5;
 }
 
 #btn-log-in {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 5/7;
 }
 
-
-/* Inicia Menu */
-
-#menu {
-    background: #242E3A;
-    background-size: cover;
-    grid-template-columns: 3f 3f;
-    grid-template-rows: 25% 35% 15% 25%;
-}
-
-#img-comida {
-    grid-column: 2;
-    grid-row: 2/3;
-}
-
-.title-menu {
-    font-size: 40px;
-    font-weight: bold;
-    color: #fffdfd;
-}
-
-#h3-desayuno {
-    grid-column: 1;
+#lb-user {
+    grid-column: 2/3;
     grid-row: 3/4;
+    justify-self: center;
 }
 
-#h3-comida {
+#lb-password {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+}
+
+
+/* Estilos del footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-row: 10% auto;
+    height: 24vh;
+}
+
+#nav-footer {
+    background-color: #38404a;
+    height: 24vh;
+    width: 100%;
     grid-column: 2;
-    grid-row: 3/4
+    display: grid;
+    grid-template-columns: 15% 30% auto 30% 15%;
+    grid-template-rows: 15% 40% auto;
 }
 
-#img-desayuno {
-    grid-column: 1;
+.font-roboto {
+    font-family: Roboto;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+}
+
+.btn-footer {
+    font-size: 18px;
+    width: 108px;
+    height: 60.3px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #a4d4b4 100%, rgba(0, 245, 81, 0));
+}
+
+#confirm {
+    grid-column: 2/3;
     grid-row: 2/3;
 }
 
+#cancel {
+    grid-column: 4/5;
+    grid-row: 2;
+}
 
-/* Clases de break y food */
+.total {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+
+#p-total {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#p-cost {
+    grid-column: 4;
+    grid-row: 1;
+    text-align: left;
+}
+
+
+/* Clases de botones del componente breakfast y food */
 
 .button {
     width: 108px;
-    height: 60.3px;
+    height: 93px;
     border-radius: 10px;
     font-family: Roboto;
     font-size: 18px;
@@ -124,75 +166,258 @@
     color: #000000
 }
 
-.principal {
-    position: absolute;
+.containerB {
+    grid-row: auto;
     display: grid;
-    grid-template-columns: 60% auto;
-    bottom: 0.6%;
-    width: 100%;
-    height: 24vh;
+    height: 89vh;
+    grid-template-columns: 3% 25% 25% 25% auto;
+    grid-template-rows: 5% 20% 5% 20% 5% 20% 5% auto;
 }
 
-.main-button {
-    background-color: #38404a;
-    grid-column: 1;
+.containerF {
+    overflow: scroll;
+    grid-row: auto;
     display: grid;
-    grid-template-columns: 25% 25% 25% auto;
-    grid-template-rows: 15% 40% auto;
-    margin-right: 5px;
+    height: 89vh;
+    grid-template-columns: 3% 25% 25% 25% auto;
+    grid-template-rows: 5% 20% 20% 5% 20% 5% 20% 5% 20% 5% 20% auto;
 }
 
-.saucers {
-    background-color: #ff6a5c;
-    grid-column: 1;
+.saucer {
+    background-color: #FF6A5C;
+    margin: auto;
     grid-row: 2;
-    margin: 0px auto;
+}
+
+.simple-saucer {
+    background-color: #EAB126;
+    margin: auto;
+    grid-row: 2;
+}
+
+.double-saucer {
+    background-color: #FF6A5C;
+    margin: auto;
+    grid-row: 3;
 }
 
 .drink {
-    background-color: #20948b;
-    grid-column: 2;
-    grid-row: 2;
-    margin: 0px auto;
+    background-color: #20948B;
+    margin: auto;
+    grid-row: 4/5;
+}
+
+.ingredient-b {
+    background-color: #C0DA7A;
+    margin: auto;
+    grid-row: 6/7;
+}
+
+.ingredient-f {
+    background-color: #C0DA7A;
+    margin: auto;
 }
 
 .ok {
-    background-image: linear-gradient(to top, #a4d4b4 100%, rgba(0, 245, 81, 0));
-    grid-column: 4;
-    grid-row: 2;
-    margin: 0px auto;
-}
-
-.extra {
-    background-color: #eedd4c;
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: 5;
+    grid-row: 8/9;
+    background-color: #A4D4B4;
     margin: auto;
 }
 
-
-/* Inicia desayuno */
-
-#ingredients-break {
-    background-color: #c0da7a;
-    grid-column: 3;
-    grid-row: 2;
-    margin: 0px auto;
+.extras {
+    background-color: #EDDD4C;
+    margin: auto;
 }
 
-
-/* Inicia comida */
-
-#garniture {
-    background-color: #c08dba;
-    grid-column: 3;
-    grid-row: 2;
-    margin: 0px auto;
+.garrison {
+    background-color: #C08DBA;
+    margin: auto;
 }
 
-#ingredients-food {
-    background-color: #c0da7a;
+.title-order {
+    font-weight: bold;
+    font-size: 25px;
     grid-column: 2;
-    grid-row: 3;
+}
+
+.img-button {
+    width: 39px;
+    height: 38px;
+}
+
+
+/* breakfast  */
+
+#p-saucer-break {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#sandwich,
+#juice,
+#cheese {
+    grid-column: 2;
+}
+
+#p-drink-break {
+    grid-row: 3/4
+}
+
+#american,
+#onion {
+    grid-column: 3;
+}
+
+#coffe,
+#tomato {
+    grid-column: 4;
+}
+
+#p-ingredients-break {
+    grid-row: 5/6;
+}
+
+#lettuce {
+    grid-column: 5;
+}
+
+#p-extra-break {
+    grid-row: 7/8;
+}
+
+#extra-cheese {
+    grid-column: 2;
+    grid-row: 8/9;
+}
+
+
+/* Food */
+
+#p-saucer-food {
+    grid-column: 2/4;
+}
+
+#simple-res-burger,
+#double-res-burger,
+#water,
+#lettuce-f,
+#french-fries,
+#egg {
+    grid-column: 2;
+}
+
+#simple-chicken-burger,
+#double-chicken-burger,
+#soda,
+#onion-f,
+#onion-rings,
+#extra-cheese-food {
+    grid-column: 3;
+}
+
+#simple-vegetarian-burger,
+#double-vegetarian-burger,
+#tomato-f {
+    grid-column: 4;
+}
+
+#pickles {
+    grid-column: 5;
+}
+
+#p-drink-food {
+    grid-row: 4/5;
+    grid-column: 2;
+}
+
+#water,
+#soda {
+    grid-row: 5/6;
+}
+
+#p-ingredients-food {
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+#lettuce-f,
+#onion-f,
+#tomato-f,
+#pickles {
+    grid-row: 7/8;
+}
+
+#p-garrison {
+    grid-row: 8/9;
+}
+
+#french-fries,
+#onion-rings {
+    grid-row: 9/10;
+}
+
+#p-extra {
+    grid-row: 10/11;
+}
+
+#egg,
+#extra-cheese-food,
+#ok-food {
+    grid-row: 11/12;
+}
+
+
+/* Ticket */
+
+.font-verdana {
+    font-family: Verdana;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.aling-left {
+    text-align: initial;
+}
+
+#main-ticket {
+    display: grid;
+    grid-template-columns: 60% auto;
+    width: 100%;
+    height: 65vh;
+}
+
+#ticket {
+    background-color: #38404a;
+    text-align: center;
+    font-size: 25px;
+    grid-column: 2;
+}
+
+#elements {
+    display: grid;
+    grid-template-columns: 15% 45% auto;
+}
+
+#quantity {
+    grid-column: 1;
     margin: auto;
+}
+
+#item {
+    grid-column: 2;
+}
+
+#cost {
+    grid-column: 3;
+}
+
+#main-products {
+    background-color: #242e3a;
+    grid-column: 1;
+    margin-right: 5px;
+    height: 89vh;
 }

@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakfastService } from 'src/app/services/breakfast.service';
+import { FoodService, Food } from '../../services/food.service';
 
 @Component({
   selector: 'app-food',
-  templateUrl: './food.component.html',
-  styles: []
+  templateUrl: './food.component.html'
 })
 export class FoodComponent implements OnInit {
+  buttonsFood: Food[] = [];
+  constructor(private showButtonsFood: FoodService)  {
 
-  constructor(public mostrar: BreakfastService) { }
-
-  ngOnInit() {
   }
 
-  public goComand() {
-    this.mostrar.view();
+  ngOnInit() {
+    this.buttonsFood = this.showButtonsFood.getFood();
+    console.log(this.buttonsFood);
   }
 
 }

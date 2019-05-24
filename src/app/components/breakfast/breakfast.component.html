@@ -1,9 +1,8 @@
-<main *ngIf="mostrar.mostrar" class="principal">
-    <main class="main-button">
-        <button class="button saucers">Platillos</button>
-        <button class="button drink">Bebidas</button>
-        <button id="ingredients-break" class="button">Sin ingredientes</button>
-        <button class="button ok">OK</button>
-        <button class="button extra">Extra</button>
-    </main>
+<main class="containerB">
+    <p id="p-saucer-break" class="title-order font-verdana">Platillo</p>
+    <p id="p-drink-break" class="title-order font-verdana">Bebidas</p>
+    <p id="p-ingredients-break" class="title-order font-verdana">Ingredientes</p>
+    <p id="p-extra-break" class="title-order font-verdana">Extra</p>
+    <button [routerLink]="['producto', i]" type="button" *ngFor="let btnBreak of buttonsBreak; let i = index" [id]="btnBreak.id" class="{{btnBreak.type}} button"> <img [src]="btnBreak.img" class="img-button" alt=""> <br> {{btnBreak.nombre}} </button>
+    <button type="button" class="button ok">OK</button>
 </main>
