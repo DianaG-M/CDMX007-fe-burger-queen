@@ -379,10 +379,6 @@ footer {
     color: #fff;
 }
 
-.aling-left {
-    text-align: initial;
-}
-
 #main-ticket {
     display: grid;
     grid-template-columns: 60% auto;
@@ -390,29 +386,36 @@ footer {
     height: 65vh;
 }
 
+#title-ticket {
+    font-size: 25px;
+    height: 7vh;
+}
+
 #ticket {
     background-color: #38404a;
     text-align: center;
-    font-size: 25px;
     grid-column: 2;
 }
 
-#elements {
+.elements {
     display: grid;
-    grid-template-columns: 15% 45% auto;
+    grid-template-columns: 10% 35% 35% 10%auto;
+    grid-template-rows: 50% auto;
 }
 
-#quantity {
+.quantity {
     grid-column: 1;
     margin: auto;
 }
 
 #item {
     grid-column: 2;
+    margin: auto;
 }
 
 #cost {
     grid-column: 3;
+    justify-items: right;
 }
 
 #main-products {
@@ -420,4 +423,14 @@ footer {
     grid-column: 1;
     margin-right: 5px;
     height: 89vh;
+}
+
+#items-ticket {
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+}
+
+#name-item {
+    text-align: left;
 }

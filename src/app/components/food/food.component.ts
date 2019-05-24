@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService, Food } from '../../services/food.service';
+import { ItemsTicketService } from '../../services/itemsTicket.service';
+
 
 @Component({
   selector: 'app-food',
@@ -7,7 +9,9 @@ import { FoodService, Food } from '../../services/food.service';
 })
 export class FoodComponent implements OnInit {
   buttonsFood: Food[] = [];
-  constructor(private showButtonsFood: FoodService)  {
+  objItems: object;
+  constructor(private showButtonsFood: FoodService,
+              private itemsTicket: ItemsTicketService)  {
 
   }
 
@@ -16,4 +20,12 @@ export class FoodComponent implements OnInit {
     console.log(this.buttonsFood);
   }
 
+  public filterbuttons(index) {
+    this.buttonsFood.forEach(element => {
+      if (this.buttonsFood.indexOf(element) === index) {
+        this.objItems = element;
+        this.itemsTicket.getItems(this.objItems);
+      }
+    });
+  }
 }

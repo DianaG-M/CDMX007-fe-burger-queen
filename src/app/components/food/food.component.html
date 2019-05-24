@@ -4,6 +4,6 @@
     <p id="p-ingredients-food" class="title-order font-verdana">Ingredientes</p>
     <p id="p-garrison" class="title-order font-verdana">Guarnición</p>
     <p id="p-extra" class="title-order font-verdana">Extra</p>
-    <button type="button" *ngFor="let btnFood of buttonsFood" [id]="btnFood.id" class="{{btnFood.type}} button"> <img [src]="btnFood.img" alt="" class="img-button"> <br> {{ btnFood.nombre }}</button>
+    <button type="button" (click)="filterbuttons(i)" *ngFor="let btnFood of buttonsFood, let i = index" [id]="btnFood.id" class="{{btnFood.type}} button"> <img [src]="btnFood.img" alt="" class="img-button"> <br> {{ btnFood.nombre }}</button>
     <button type="button" id="ok-food" class="button ok">OK</button>
 </main>

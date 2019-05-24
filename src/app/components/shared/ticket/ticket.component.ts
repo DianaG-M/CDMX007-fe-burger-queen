@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemsTicketService } from '../../../services/itemsTicket.service';
+
 
 @Component({
   selector: 'app-ticket',
@@ -6,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TicketComponent implements OnInit {
 
-  constructor() { }
+  constructor(private itemTicket: ItemsTicketService) {
+  }
 
   ngOnInit() {
   }
 
+  getItemOrder() {
+    return this.itemTicket.items;
+  }
 }
