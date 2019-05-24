@@ -149,20 +149,12 @@ footer {
     text-align: left;
 }
 
-#break-food {
-    height: 24vh;
-    background: #38404a;
-    grid-column: 1;
-    grid-row: 1/2;
-    margin-right: 5px;
-}
-
 
 /* Clases de botones del componente breakfast y food */
 
 .button {
     width: 108px;
-    height: 60.3px;
+    height: 93px;
     border-radius: 10px;
     font-family: Roboto;
     font-size: 18px;
@@ -174,74 +166,134 @@ footer {
     color: #000000
 }
 
-.container {
+.containerB {
+    grid-row: auto;
     display: grid;
-    height: 24vh;
-    grid-template-columns: 25% 25% 25% auto;
-    grid-template-rows: 15% 40% auto;
+    height: 89vh;
+    grid-template-columns: 3% 25% 25% 25% auto;
+    grid-template-rows: 5% 20% 5% 20% 5% 20% 5% auto;
 }
 
-.saucers {
-    grid-column: 1;
-    grid-row: 2/3;
+.containerF {
+    overflow: scroll;
+    grid-row: auto;
+    display: grid;
+    height: 89vh;
+    grid-template-columns: 3% 25% 25% 25% auto;
+    grid-template-rows: 5% 20% 20% 5% 20% 5% 20% auto;
+}
+
+.saucer {
     background-color: #FF6A5C;
     margin: auto;
+    grid-row: 2;
 }
 
-.drinks {
-    grid-column: 2;
-    grid-row: 2/3;
-    background-color: #20948B;
+.simple-saucer {
+    background-color: #EAB126;
     margin: auto;
 }
 
-.ingredientsB,
-.ingredientsF {
+.drink {
+    background-color: #20948B;
+    margin: auto;
+    grid-row: 4/5;
+}
+
+.ingredient-b {
+    background-color: #C0DA7A;
+    margin: auto;
+    grid-row: 6/7;
+}
+
+.ingredient-f {
     background-color: #C0DA7A;
     margin: auto;
 }
 
 .ok {
-    grid-column: 4;
-    grid-row: 2/3;
+    grid-column: 5;
+    grid-row: 8/9;
     background-color: #A4D4B4;
     margin: auto;
 }
 
-.extra {
+.extras {
     background-color: #EDDD4C;
     margin: auto;
 }
 
-.garniture {
+.garrison {
     background-color: #C08DBA;
     margin: auto;
 }
 
-
-/* Botones exclusivos del componente breakfast */
-
-#ingredientsB {
-    grid-column: 3;
-    grid-row: 2/3;
-}
-
-#extra {
-    grid-column: 1;
-    grid-row: 3/4;
-}
-
-
-/* Botones exclusivos del componente food*/
-
-#ingredientsF {
+.title-order {
+    font-weight: bold;
+    font-size: 25px;
     grid-column: 2;
-    grid-row: 3/4;
 }
 
-#garniture {
+.img-button {
+    width: 39px;
+    height: 38px;
+}
+
+
+/* breakfast  */
+
+#p-saucer {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#sandwich {
+    grid-column: 2;
+}
+
+#p-drink {
+    grid-row: 3/4
+}
+
+#juice {
+    grid-column: 2;
+}
+
+#american {
     grid-column: 3;
-    grid-row: 2/3;
+}
+
+#coffe {
+    grid-column: 4;
+}
+
+#p-ingredients {
+    grid-row: 5/6;
+}
+
+#cheese {
+    grid-column: 2;
+}
+
+#onion {
+    grid-column: 3;
+}
+
+#tomato {
+    grid-column: 4;
+}
+
+#lettuce {
+    grid-column: 5;
+}
+
+#p-extra {
+    grid-row: 7/8;
+}
+
+#extra-cheese {
+    grid-column: 2;
+    grid-row: 8/9;
 }
 
 
@@ -296,19 +348,5 @@ footer {
     background-color: #242e3a;
     grid-column: 1;
     margin-right: 5px;
-}
-
-
-/* platillos */
-
-.platillos {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% auto;
-    width: 100%;
-}
-
-#saucer-breakfast {
-    grid-column: 1/2;
-    color: white;
-    font-size: 50px;
+    height: 89vh;
 }

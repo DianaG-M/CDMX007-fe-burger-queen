@@ -3,17 +3,12 @@ import { HomeComponent } from './components/home/home.component';
 import { OrderComponent } from './components/order/order.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { FoodComponent } from './components/food/food.component';
-import { SaucersBreakfastComponent } from './components/saucers-breakfast/saucers-breakfast.component';
-
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'orden', component: OrderComponent,
     children: [
-        { path: 'desayuno', component: BreakfastComponent, /* }, */
-        children: [
-            { path: 'producto/:id', component: SaucersBreakfastComponent }
-        ]} ,
+        { path: 'desayuno', component: BreakfastComponent },
         { path: 'comida', component: FoodComponent }
     ]},
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
