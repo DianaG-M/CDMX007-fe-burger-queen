@@ -22,7 +22,7 @@ export class BreakfastComponent implements OnInit {
     this.buttonsBreak.forEach(element => {
       if (this.buttonsBreak.indexOf(element) === index) {
         this.objItems = element;
-        this.itemsTicket.getItems(this.objItems);
+        this.itemsTicket.getItems(element);
       }
     });
   }

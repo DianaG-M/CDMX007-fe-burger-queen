@@ -17,4 +17,9 @@ export class TicketComponent implements OnInit {
   getItemOrder() {
     return this.itemTicket.items;
   }
+
+  getArrTrash() {
+    return this.itemTicket.newArr;
+
+  }
 }

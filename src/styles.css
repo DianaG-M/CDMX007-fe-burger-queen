@@ -100,7 +100,7 @@ footer {
     grid-column: 2;
     display: grid;
     grid-template-columns: 15% 30% auto 30% 15%;
-    grid-template-rows: 15% 40% auto;
+    grid-template-rows: 20% 40% auto;
 }
 
 .font-roboto {
@@ -132,7 +132,7 @@ footer {
 }
 
 .total {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     color: #ffffff;
     text-align: center;
