@@ -27,19 +27,19 @@ export class FoodService {
       precio: 40
     }, {
       id: 'double-res-burger',
-      type: 'saucer',
+      type: 'double-saucer',
       nombre: 'Doble res',
       img: 'assets/img/hamburguesa.png',
       precio: 55
     }, {
       id: 'double-chicken-burger',
-      type: 'saucer',
+      type: 'double-saucer',
       nombre: 'Doble pollo',
       img: 'assets/img/hamburguesa.png',
       precio: 55
     }, {
       id: 'double-vegetarian-burger',
-      type: 'saucer',
+      type: 'double-saucer',
       nombre: 'Doble vegetariana',
       img: 'assets/img/hamburguesa.png',
       precio: 55
@@ -68,19 +68,19 @@ export class FoodService {
       img: 'assets/img/aros.png',
       precio: 15
     }, {
-      id: 'lettuce',
+      id: 'lettuce-f',
       type: 'ingredient-f',
       nombre: 'Lechuga',
       img: 'assets/img/lechuga.png',
       precio: 0
     }, {
-      id: 'onion',
+      id: 'onion-f',
       type: 'ingredient-f',
       nombre: 'Cebolla',
       img: 'assets/img/cebolla.png',
       precio: 0
     }, {
-      id: 'tomato',
+      id: 'tomato-f',
       type: 'ingredient-f',
       nombre: 'Jitomate',
       img: 'assets/img/jitomate.png',

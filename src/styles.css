@@ -180,7 +180,7 @@ footer {
     display: grid;
     height: 89vh;
     grid-template-columns: 3% 25% 25% 25% auto;
-    grid-template-rows: 5% 20% 20% 5% 20% 5% 20% auto;
+    grid-template-rows: 5% 20% 20% 5% 20% 5% 20% 5% 20% 5% 20% auto;
 }
 
 .saucer {
@@ -192,6 +192,13 @@ footer {
 .simple-saucer {
     background-color: #EAB126;
     margin: auto;
+    grid-row: 2;
+}
+
+.double-saucer {
+    background-color: #FF6A5C;
+    margin: auto;
+    grid-row: 3;
 }
 
 .drink {
@@ -242,58 +249,122 @@ footer {
 
 /* breakfast  */
 
-#p-saucer {
+#p-saucer-break {
     grid-column: 2;
     grid-row: 1;
 }
 
-#sandwich {
-    grid-column: 2;
-}
-
-#p-drink {
-    grid-row: 3/4
-}
-
-#juice {
-    grid-column: 2;
-}
-
-#american {
-    grid-column: 3;
-}
-
-#coffe {
-    grid-column: 4;
-}
-
-#p-ingredients {
-    grid-row: 5/6;
-}
-
+#sandwich,
+#juice,
 #cheese {
     grid-column: 2;
 }
 
+#p-drink-break {
+    grid-row: 3/4
+}
+
+#american,
 #onion {
     grid-column: 3;
 }
 
+#coffe,
 #tomato {
     grid-column: 4;
+}
+
+#p-ingredients-break {
+    grid-row: 5/6;
 }
 
 #lettuce {
     grid-column: 5;
 }
 
-#p-extra {
+#p-extra-break {
     grid-row: 7/8;
 }
 
 #extra-cheese {
     grid-column: 2;
     grid-row: 8/9;
+}
+
+
+/* Food */
+
+#p-saucer-food {
+    grid-column: 2/4;
+}
+
+#simple-res-burger,
+#double-res-burger,
+#water,
+#lettuce-f,
+#french-fries,
+#egg {
+    grid-column: 2;
+}
+
+#simple-chicken-burger,
+#double-chicken-burger,
+#soda,
+#onion-f,
+#onion-rings,
+#extra-cheese-food {
+    grid-column: 3;
+}
+
+#simple-vegetarian-burger,
+#double-vegetarian-burger,
+#tomato-f {
+    grid-column: 4;
+}
+
+#pickles {
+    grid-column: 5;
+}
+
+#p-drink-food {
+    grid-row: 4/5;
+    grid-column: 2;
+}
+
+#water,
+#soda {
+    grid-row: 5/6;
+}
+
+#p-ingredients-food {
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+#lettuce-f,
+#onion-f,
+#tomato-f,
+#pickles {
+    grid-row: 7/8;
+}
+
+#p-garrison {
+    grid-row: 8/9;
+}
+
+#french-fries,
+#onion-rings {
+    grid-row: 9/10;
+}
+
+#p-extra {
+    grid-row: 10/11;
+}
+
+#egg,
+#extra-cheese-food,
+#ok-food {
+    grid-row: 11/12;
 }
 
 
