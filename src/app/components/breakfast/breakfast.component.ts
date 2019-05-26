@@ -18,7 +18,7 @@ export class BreakfastComponent implements OnInit {
     console.log(this.buttonsBreak);
   }
 
-  public filterbuttons(index) {
+  public printButtons(index) {
     this.buttonsBreak.forEach(element => {
       if (this.buttonsBreak.indexOf(element) === index) {
         this.objItems = element;

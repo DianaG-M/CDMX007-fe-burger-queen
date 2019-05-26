@@ -14,13 +14,5 @@ export class ItemsTicketService {
         this.items.push(item);
         console.log(this.items);
     }
-    public delete(index) {
-        this.items.forEach(element => {
-            if (this.items.indexOf(element) === index) {
-                this.newArr = element.splice(index, 1);
-                console.log(this.newArr);
-            }
-        });
-    }
 }
 

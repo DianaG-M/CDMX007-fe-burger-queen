@@ -395,12 +395,19 @@ footer {
     background-color: #38404a;
     text-align: center;
     grid-column: 2;
+    height: 66vh;
+    overflow: scroll;
 }
 
-.elements {
+.elements-title {
     display: grid;
-    grid-template-columns: 10% 35% 35% 10%auto;
+    grid-template-columns: 10% 35% 35% 10% auto;
     grid-template-rows: 50% auto;
+}
+
+.elements-ticket {
+    display: grid;
+    grid-template-columns: 10% 35% 35% 10% auto;
 }
 
 .quantity {
