@@ -6,7 +6,8 @@ import { APP_ROUTING } from './app.routes';
 
 // Service
 import { BreakfastService } from './services/breakfast.service';
-import { ItemsBreakfastService } from './services/itemsBreakfast.service';
+import { ItemsTicketService } from './services/itemsTicket.service';
+
 
 
 
@@ -20,8 +21,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { OrderComponent } from './components/order/order.component';
 import { BreakfastComponent } from './components/breakfast/breakfast.component';
 import { FoodComponent } from './components/food/food.component';
-import { SaucersBreakfastComponent } from './components/saucers-breakfast/saucers-breakfast.component';
 import { FoodService } from './services/food.service';
+
 
 
 @NgModule({
@@ -33,8 +34,7 @@ import { FoodService } from './services/food.service';
     TicketComponent,
     FooterComponent,
     BreakfastComponent,
-    FoodComponent,
-    SaucersBreakfastComponent
+    FoodComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +43,7 @@ import { FoodService } from './services/food.service';
   ],
   providers: [
     BreakfastService,
-    ItemsBreakfastService,
+    ItemsTicketService,
     FoodService
   ],
   bootstrap: [AppComponent]

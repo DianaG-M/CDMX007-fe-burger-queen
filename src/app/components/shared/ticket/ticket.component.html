@@ -6,10 +6,18 @@
 
     <section id="ticket" class="font-verdana">
         <h1>ORDEN</h1>
-        <main id="elements" class="aling-left">
-            <p id="quantity" class="font">#</p>
-            <p id="item" class="font">Items</p>
-            <p id="cost" class="font">Costo</p>
+        <main id="title-ticket" class="elements">
+            <p class="font quantity">#</p>
+            <p class="font item">Items</p>
+            <p class="font cost">Costo</p>
+
+        </main>
+        <main id="items-ticket" *ngFor="let items of getItemOrder()" class="elements font-roboto">
+            <p>1</p>
+            <p id="name-item">{{items.ticket}}</p>
+            <p>${{items.precio}}</p>
+            <i class="fas fa-pencil-alt"></i>
+            <a> <i class="far fa-trash-alt"></i> </a>
         </main>
     </section>
 </main>
