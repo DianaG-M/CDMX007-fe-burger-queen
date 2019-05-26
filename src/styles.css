@@ -395,6 +395,8 @@ footer {
     background-color: #38404a;
     text-align: center;
     grid-column: 2;
+    height: 66vh;
+    overflow: scroll;
 }
 
 .elements {
