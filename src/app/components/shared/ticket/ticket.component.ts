@@ -1,28 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemsTicketService } from '../../../services/itemsTicket.service';
-
 
 @Component({
   selector: 'app-ticket',
-  templateUrl: './ticket.component.html'
+  templateUrl: './ticket.component.html',
+  styleUrls: ['./ticket.component.css']
 })
 export class TicketComponent implements OnInit {
-  constructor(private itemTicket: ItemsTicketService) {
-  }
+
+  constructor() { }
 
   ngOnInit() {
   }
 
-  getItemOrder() {
-    return this.itemTicket.items;
-  }
-
-  /* getArrTrash() {
-    return this.itemTicket.newArr;
-
-  } */
-
-  // clean() {
-  //   document.getElementById('items-ticket').innerHTML = '';
-  // }
 }

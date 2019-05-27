@@ -5,30 +5,10 @@
         width: 100%
     }
     
-    .icons {
-        width: 42px;
-        height: 41px;
-    }
-    
-    .btn {
-        font-weight: bold;
-        color: #ffffff;
-        font-size: 22px;
-        margin: auto;
-        height: 80%;
-        width: 80%;
-        background-color: #38404a;
-    }
-    
-    button:hover {
-        border-bottom: 3px solid #fffafa;
-        /* background-color: #242e3a; */
-    }
-    
     #nav-logo {
         grid-column: 1;
         display: grid;
-        grid-template-columns: 5% 15% 40% auto;
+        grid-template-columns: 5% 12% 30% auto;
         grid-template-rows: 100%;
         background-color: #38404a;
         height: 80px;
@@ -44,11 +24,10 @@
     #desayuno {
         grid-column: 3/4;
         grid-row: 1;
-    }
-    
-    #comida {
-        grid-column: 4;
-        grid-row: 1;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 22px;
+        margin: auto;
     }
     
     #nav-icon {
@@ -59,6 +38,11 @@
         background-color: #38404a;
         width: 100%;
         height: 80px;
+    }
+    
+    .icons {
+        width: 42px;
+        height: 41px;
     }
     
     #menu {
