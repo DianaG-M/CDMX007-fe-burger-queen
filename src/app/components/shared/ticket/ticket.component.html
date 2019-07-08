@@ -12,12 +12,12 @@
             <p class="font cost">Costo</p>
 
         </main>
-        <main id="items-ticket" *ngFor="let items of getItemOrder()" class="elements font-roboto">
+        <main id="items-ticket" *ngFor="let items of getItemOrder(); let i = index" class="elements font-roboto">
             <p>1</p>
             <p id="name-item">{{items.ticket}}</p>
             <p>${{items.precio}}</p>
             <i class="fas fa-pencil-alt"></i>
-            <a> <i class="far fa-trash-alt"></i> </a>
+            <i (click)="getArrTrash(i)" class="far fa-trash-alt"></i>
         </main>
     </section>
 </main>

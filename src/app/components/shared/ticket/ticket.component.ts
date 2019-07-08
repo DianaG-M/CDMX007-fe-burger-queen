@@ -7,7 +7,6 @@ import { ItemsTicketService } from '../../../services/itemsTicket.service';
   templateUrl: './ticket.component.html'
 })
 export class TicketComponent implements OnInit {
-
   constructor(private itemTicket: ItemsTicketService) {
   }
 
@@ -18,8 +17,9 @@ export class TicketComponent implements OnInit {
     return this.itemTicket.items;
   }
 
-  getArrTrash() {
-    return this.itemTicket.newArr;
-
+  getArrTrash(index) {
+    this.itemTicket.delete(index);
+    console.log('Borrando item');
   }
+
 }
